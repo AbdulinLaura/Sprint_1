@@ -10,9 +10,11 @@ world_champions[2022] = 'Аргентина'
 
 country = 'Италия'
 
-if country in world_champions:
-    print('Италия cтановилась чемпионом мира по футболу в 21 веке!')
+if country in world_champions.values():
+    print(f'{country} становилась чемпионом мира по футболу в 21 веке!')
 else:
-    print('Италия не выигрывала чемпионат мира по футболу в 21 веке.')
+    print(f'{country} не выигрывала чемпионат мира по футболу в 21 веке.')
 
-print(world_champions)
+
+for year, champ in world_champions.items():
+    print(f'{year} - {champ}')
